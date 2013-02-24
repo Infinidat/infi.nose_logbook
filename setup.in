@@ -34,6 +34,8 @@ SETUP_INFO = dict(
         ),
 )
 
+SETUP_INFO['entry_points']['nose.plugins'] = ['logbook = infi.nose_logbook:LogbookPlugin']
+
 if SETUP_INFO['url'] is None:
     _ = SETUP_INFO.pop('url')
 
